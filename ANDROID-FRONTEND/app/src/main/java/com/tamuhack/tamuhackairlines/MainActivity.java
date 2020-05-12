@@ -55,7 +55,7 @@ public class MainActivity extends AppCompatActivity {
         int id = item.getItemId();
 
         if (id == R.id.action_login) {
-            Intent intent = new Intent(MainActivity.this, LoginActivity.class);
+            Intent intent = new Intent(MainActivity.this, login_materialUI.class);
             startActivity(intent);
         }
         if (id == R.id.action_signup) {

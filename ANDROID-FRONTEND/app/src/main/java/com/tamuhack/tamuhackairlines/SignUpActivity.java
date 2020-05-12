@@ -169,8 +169,6 @@ public class SignUpActivity extends MainActivity implements View.OnClickListener
         if (user != null) {
             findViewById(R.id.emailPasswordButtons).setVisibility(View.GONE);
             findViewById(R.id.emailPasswordFields).setVisibility(View.GONE);
-            findViewById(R.id.signedInButtons).setVisibility(View.VISIBLE);
-            findViewById(R.id.verifyEmailButton).setEnabled(!user.isEmailVerified());
            // TextView textViewToChange = findViewById(R.id.loggedInUserDisplay);
            // textViewToChange.setText(user.getEmail() + ", Is currently logged in!");
         } else {
