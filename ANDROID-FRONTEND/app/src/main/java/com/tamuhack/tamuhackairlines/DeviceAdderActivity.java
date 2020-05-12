@@ -1,9 +1,9 @@
 package com.tamuhack.tamuhackairlines;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
 import android.widget.TextView;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
@@ -20,10 +20,11 @@ public class DeviceAdderActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_device_adder);
 
-        final TextView currentConnection = (TextView)findViewById(R.id.currentConnectedDeviceTextView);
+        final TextView currentConnection = findViewById(R.id.currentConnectedDeviceTextView);
 
 
         Thread reader = new Thread() {
+
             public void run() {
                 CurrentConnectionToBluetooth bluetooth = new CurrentConnectionToBluetooth();
 

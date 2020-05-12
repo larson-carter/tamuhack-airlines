@@ -103,7 +103,7 @@ public class Poster {
         BufferedReader br;
 
         try {
-            br = new BufferedReader(new InputStreamReader(connection.getInputStream(), "utf-8"));
+            br = new BufferedReader(new InputStreamReader(connection.getInputStream(), StandardCharsets.UTF_8));
         } catch (IOException e) {
             return "Error: " + e.getMessage();
         }
@@ -179,7 +179,7 @@ public class Poster {
         BufferedReader br;
 
         try {
-            br = new BufferedReader(new InputStreamReader(connection.getInputStream(), "utf-8"));
+            br = new BufferedReader(new InputStreamReader(connection.getInputStream(), StandardCharsets.UTF_8));
         } catch (IOException e) {
             return "Error: " + e.getMessage();
         }
