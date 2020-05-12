@@ -6,7 +6,6 @@ import androidx.annotation.NonNull;
 
 import androidx.fragment.app.Fragment;
 
-import android.text.TextUtils;
 import android.util.Log;
 
 import android.view.LayoutInflater;
@@ -37,7 +36,6 @@ public class LoginFragment extends Fragment {
     private EditText passwordField;
 
     private Button loginButton;
-
 
     private String email;
     private String password;
@@ -72,7 +70,7 @@ public class LoginFragment extends Fragment {
         emailField = RootView.findViewById(R.id.emailTextField);
         passwordField = RootView.findViewById(R.id.emailTextField);
 
-        loginButton = RootView.findViewById(R.id.loginButton);
+        loginButton = RootView.findViewById(R.id.signupButton);
 
         email = emailField.getText().toString();
         password = passwordField.getText().toString();
@@ -94,6 +92,7 @@ public class LoginFragment extends Fragment {
 
         // [START sign_in_with_email]
         mAuth.signInWithEmailAndPassword(email, password).addOnCompleteListener(getActivity(), new OnCompleteListener<AuthResult>() {
+
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if (task.isSuccessful()) {
@@ -109,7 +108,7 @@ public class LoginFragment extends Fragment {
 
                     }
 
-                });
+        });
 
     }
 
