@@ -1,0 +1,2 @@
+rootProject.name='TamuFlights'
+include ':app'
