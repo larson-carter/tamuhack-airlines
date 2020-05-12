@@ -7,7 +7,7 @@
     tools:context=".FirstFragment">
 
     <TextView
-        android:id="@+id/loginLabel"
+        android:id="@+id/signupLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Login"
@@ -68,12 +68,13 @@
         android:ems="10"
         android:hint="Enter Your Password"
         android:inputType="textPassword"
-        app:layout_constraintBottom_toTopOf="@+id/loginButton"
+        app:layout_constraintBottom_toTopOf="@+id/signupButton"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/loginButton"
+        android:id="@+id/signupButton"
         style="@android:style/Widget.Button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
