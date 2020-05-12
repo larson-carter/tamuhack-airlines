@@ -1,0 +1,77 @@
+{
+  "project_info": {
+    "project_number": "30348928080",
+    "firebase_url": "https://tamu-hack-airlines.firebaseio.com",
+    "project_id": "tamu-hack-airlines",
+    "storage_bucket": "tamu-hack-airlines.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:30348928080:android:35854c027243d5c3209d55",
+        "android_client_info": {
+          "package_name": "com.larsoncarter.tamuflights"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "30348928080-pav4umtpdsfts9qo8alop3j83flr8jpd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDf0hjJohn1fybPu9n48Z08_er1To-_bM0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "30348928080-pav4umtpdsfts9qo8alop3j83flr8jpd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:30348928080:android:5c527dcb4bd16f42209d55",
+        "android_client_info": {
+          "package_name": "com.tamuhack.tamuhackairlines"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "30348928080-ddorj3s0godcqvnlb4ji89ec20etuird.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.tamuhack.tamuhackairlines",
+            "certificate_hash": "e7e6d156297505ff5e1f64c7741d937e5b5f0008"
+          }
+        },
+        {
+          "client_id": "30348928080-pav4umtpdsfts9qo8alop3j83flr8jpd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDf0hjJohn1fybPu9n48Z08_er1To-_bM0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "30348928080-pav4umtpdsfts9qo8alop3j83flr8jpd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
