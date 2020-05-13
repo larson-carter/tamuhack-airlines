@@ -22,24 +22,6 @@ public class SettingsActivity extends AppCompatActivity {
                 .replace(R.id.settings, new SettingsFragment())
                 .commit();
 
-        ActionBar actionBar = getSupportActionBar();
-
-        // toolbar
-        Toolbar toolbar = findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
-
-        // add back arrow to toolbar
-        if (getSupportActionBar() != null){
-            getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-            getSupportActionBar().setDisplayShowHomeEnabled(true);
-        }
-
-        if (actionBar != null) {
-
-            actionBar.setDisplayHomeAsUpEnabled(true);
-
-        }
-
     }
 
     @Override
