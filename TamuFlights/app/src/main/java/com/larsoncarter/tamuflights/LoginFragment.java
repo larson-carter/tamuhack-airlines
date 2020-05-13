@@ -70,7 +70,7 @@ public class LoginFragment extends Fragment {
         emailField = RootView.findViewById(R.id.emailTextField);
         passwordField = RootView.findViewById(R.id.emailTextField);
 
-        loginButton = RootView.findViewById(R.id.signupButton);
+        loginButton = RootView.findViewById(R.id.loginButton);
 
         email = emailField.getText().toString();
         password = passwordField.getText().toString();

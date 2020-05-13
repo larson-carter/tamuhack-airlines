@@ -31,7 +31,7 @@ public class SecondFragment extends Fragment {
             }
         });
 
-        view.findViewById(R.id.signupButton).setOnClickListener(new View.OnClickListener() {
+        view.findViewById(R.id.loginButton).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 NavHostFragment.findNavController(SecondFragment.this)

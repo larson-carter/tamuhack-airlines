@@ -91,7 +91,7 @@
         android:id="@+id/confirmPasswordTextField"
         android:layout_width="337dp"
         android:layout_height="51dp"
-        android:layout_marginBottom="64dp"
+        android:layout_marginBottom="76dp"
         android:ems="10"
         android:hint="Confirm your Password"
         android:inputType="textPassword"
