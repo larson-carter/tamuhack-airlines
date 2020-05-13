@@ -4,6 +4,7 @@ import android.os.Bundle;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
+import androidx.navigation.fragment.NavHostFragment;
 
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -91,6 +92,7 @@ public class SignupFragment extends Fragment {
     }
 
     private void createAccount(String email, String password) {
+
             Log.d(TAG, "createAccount:" + email);
 
             // [START create_user_with_email]
@@ -102,6 +104,7 @@ public class SignupFragment extends Fragment {
                                 // Sign in success, update UI with the signed-in user's information
                                 Log.d(TAG, "createUserWithEmail:success");
                                 FirebaseUser user = mAuth.getCurrentUser();
+                                NavHostFragment.findNavController(SignupFragment.this).navigate(R.id.action_goToHomePage);
                             } else {
                                 // If sign in fails, display a message to the user.
                                 Log.w(TAG, "createUserWithEmail:failure", task.getException());

@@ -5,6 +5,7 @@ import android.os.Bundle;
 import androidx.annotation.NonNull;
 
 import androidx.fragment.app.Fragment;
+import androidx.navigation.fragment.NavHostFragment;
 
 import android.util.Log;
 
@@ -51,6 +52,12 @@ public class LoginFragment extends Fragment {
 
         FirebaseUser currentUser = mAuth.getCurrentUser();
 
+        if (currentUser != null) {
+
+            NavHostFragment.findNavController(LoginFragment.this).navigate(R.id.action_goToHomePage);
+
+        }
+
     }
 
     public void onCreate(Bundle savedInstanceState) {
@@ -68,9 +75,9 @@ public class LoginFragment extends Fragment {
         RootView = inflater.inflate(R.layout.fragment_login, container, false);
 
         emailField = RootView.findViewById(R.id.emailTextField);
-        passwordField = RootView.findViewById(R.id.emailTextField);
+        passwordField = RootView.findViewById(R.id.passwordTextField);
 
-        loginButton = RootView.findViewById(R.id.loginButton);
+        loginButton = (Button) RootView.findViewById(R.id.loginButton);
 
         email = emailField.getText().toString();
         password = passwordField.getText().toString();
@@ -99,6 +106,7 @@ public class LoginFragment extends Fragment {
                             // Sign in success, update UI with the signed-in user's information
                             Log.d(TAG, "signInWithEmail:success");
                             FirebaseUser user = mAuth.getCurrentUser();
+                            NavHostFragment.findNavController(LoginFragment.this).navigate(R.id.action_goToHomePage);
                         } else {
                             // If sign in fails, display a message to the user.
                             Log.w(TAG, "signInWithEmail:failure", task.getException());

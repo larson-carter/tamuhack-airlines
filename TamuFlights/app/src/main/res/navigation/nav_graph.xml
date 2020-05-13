@@ -35,10 +35,19 @@
         android:id="@+id/loginFragment"
         android:name="com.larsoncarter.tamuflights.LoginFragment"
         android:label="fragment_login"
-        tools:layout="@layout/fragment_login" />
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_goToHomePage"
+            app:destination="@id/homeActivity" />
+    </fragment>
     <fragment
         android:id="@+id/signupFragment"
         android:name="com.larsoncarter.tamuflights.SignupFragment"
         android:label="fragment_signup"
         tools:layout="@layout/fragment_signup" />
+    <activity
+        android:id="@+id/homeActivity"
+        android:name="com.larsoncarter.tamuflights.HomeActivity"
+        android:label="activity_home"
+        tools:layout="@layout/activity_home" />
 </navigation>
