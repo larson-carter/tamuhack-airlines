@@ -13,7 +13,9 @@
 
         <action
             android:id="@+id/action_loginSignUpFragment"
-            app:destination="@id/loginSignUpFragment" />
+            app:destination="@id/loginSignUpFragment"
+            app:enterAnim="@anim/fragment_fade_enter"
+            app:exitAnim="@anim/fragment_fade_exit" />
     </fragment>
     <fragment
         android:id="@+id/loginSignUpFragment"
@@ -23,13 +25,19 @@
 
         <action
             android:id="@+id/action_goToWelcomeFragment"
-            app:destination="@id/welcomeFragment" />
+            app:destination="@id/welcomeFragment"
+            app:enterAnim="@anim/fragment_fade_enter"
+            app:exitAnim="@anim/fragment_fade_exit" />
         <action
             android:id="@+id/action_goToLoginFragment"
-            app:destination="@id/loginFragment" />
+            app:destination="@id/loginFragment"
+            app:enterAnim="@anim/fragment_fade_enter"
+            app:exitAnim="@anim/fragment_fade_exit" />
         <action
             android:id="@+id/action_goToSignupFragment"
-            app:destination="@id/signupFragment" />
+            app:destination="@id/signupFragment"
+            app:enterAnim="@anim/fragment_fade_enter"
+            app:exitAnim="@anim/fragment_fade_exit" />
     </fragment>
     <fragment
         android:id="@+id/loginFragment"
@@ -38,7 +46,9 @@
         tools:layout="@layout/fragment_login" >
         <action
             android:id="@+id/action_goToHomePage"
-            app:destination="@id/homeActivity" />
+            app:destination="@id/homeActivity"
+            app:enterAnim="@anim/fragment_fade_enter"
+            app:exitAnim="@anim/fragment_fade_exit" />
     </fragment>
     <fragment
         android:id="@+id/signupFragment"
@@ -47,7 +57,9 @@
         tools:layout="@layout/fragment_signup" >
         <action
             android:id="@+id/action_goToHomePage"
-            app:destination="@id/homeActivity" />
+            app:destination="@id/homeActivity"
+            app:enterAnim="@anim/fragment_fade_enter"
+            app:exitAnim="@anim/fragment_fade_exit" />
     </fragment>
     <activity
         android:id="@+id/homeActivity"
