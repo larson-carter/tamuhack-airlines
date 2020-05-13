@@ -1,12 +1,13 @@
 package com.larsoncarter.tamuflights;
 
+import android.content.Intent;
 import android.os.Bundle;
-import android.view.MenuItem;
 
-import androidx.appcompat.app.ActionBar;
+import android.view.MenuItem;
+import android.view.View;
+import android.widget.ImageButton;
+
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.Toolbar;
-import androidx.preference.PreferenceFragmentCompat;
 
 public class SettingsActivity extends AppCompatActivity {
 
@@ -17,31 +18,28 @@ public class SettingsActivity extends AppCompatActivity {
 
         setContentView(R.layout.settings_activity);
 
-        getSupportFragmentManager()
-                .beginTransaction()
-                .replace(R.id.settings, new SettingsFragment())
-                .commit();
+        ImageButton goBackButton = findViewById(R.id.goBackButton);
+
+        goBackButton.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+
+                Intent intent = new Intent(SettingsActivity.this, HomeActivity.class);
+
+                startActivity(intent);
+
+            }
+
+        });
 
     }
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
 
-        // handle arrow click here
-        if (item.getItemId() == android.R.id.home) {
-
-            finish(); // close this activity and return to preview activity (if there is any)
-
-        }
-
         return super.onOptionsItemSelected(item);
 
     }
 
-    public static class SettingsFragment extends PreferenceFragmentCompat {
-        @Override
-        public void onCreatePreferences(Bundle savedInstanceState, String rootKey) {
-            setPreferencesFromResource(R.xml.root_preferences, rootKey);
-        }
-    }
 }
