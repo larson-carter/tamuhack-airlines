@@ -43,6 +43,21 @@ public class SignupFragment extends Fragment {
     }
 
     @Override
+    public void onStart() {
+
+        super.onStart();
+
+        FirebaseUser currentUser = mAuth.getCurrentUser();
+
+        if (currentUser != null) {
+
+            NavHostFragment.findNavController(SignupFragment.this).navigate(R.id.action_goToHomePage);
+
+        }
+
+    }
+
+    @Override
     public void onCreate(Bundle savedInstanceState) {
         
         super.onCreate(savedInstanceState);
