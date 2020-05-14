@@ -9,7 +9,11 @@ import android.widget.ImageButton;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.google.firebase.auth.FirebaseAuth;
+
 public class SettingsActivity extends AppCompatActivity {
+
+    public FirebaseAuth mAuth;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,9 +29,19 @@ public class SettingsActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                Intent intent = new Intent(SettingsActivity.this, HomeActivity.class);
+                if (mAuth.getCurrentUser() != null) {
 
-                startActivity(intent);
+                    Intent intent = new Intent(SettingsActivity.this, HomeActivity.class);
+
+                    startActivity(intent);
+
+                } else {
+
+                    Intent intent = new Intent(SettingsActivity.this, MainActivity.class);
+
+                    startActivity(intent);
+
+                }
 
             }
 
