@@ -77,7 +77,7 @@ public class SignupFragment extends Fragment {
         passwordField = RootView.findViewById(R.id.passwordTextField);
         passwordVerifyField = RootView.findViewById(R.id.confirmPasswordTextField);
 
-        signupButton = (Button) RootView.findViewById(R.id.signupButton);
+        signupButton = RootView.findViewById(R.id.signupButton);
 
         email = emailField.getText().toString();
         password = passwordField.getText().toString();
